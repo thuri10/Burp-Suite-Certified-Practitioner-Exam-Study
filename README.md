@@ -4043,6 +4043,20 @@ GET /image?filename=output.txt HTTP/2
 CHAR(83)+CHAR(69)+CHAR(76)+CHAR(69)+CHAR(67)+CHAR(84)
 ```
 
+>Unicode escape sequence, Hex Code (0022) Converts to decimal 34 which maps directly to ASCII character code 34 standard double quote `"`  
+
+```
+\u0022
+```
+
+>Unicode escape sequence payload: `cmd.exe`  
+
+```
+\U00000063\U0000006d\U00000064\U0000002e\U00000065\U00000078\U00000065
+```
+
+>Right-to-Left Override: `\u202E`
+
 [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 
 -----  
